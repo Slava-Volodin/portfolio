@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import classNames from "classnames";
-import { ReactComponent as Start } from "../../images/icons/star.svg";
+import { ReactComponent as Star } from "../../images/icons/star.svg";
 import { motion, useInView } from "framer-motion";
 import s from "./index.module.css";
 
@@ -121,7 +121,9 @@ const Skillset = () => {
                   <div>
                     {stars?.map(
                       (num) =>
-                        num <= skill.score && <Start key={skill.name + num} />,
+                        num <= skill.score && (
+                          <Star className={s.starIcon} key={skill.name + num} />
+                        ),
                     )}
                   </div>
                 </div>
