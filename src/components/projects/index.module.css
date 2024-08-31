@@ -13,6 +13,7 @@
 .leftSide {
   width: 50%;
   height: fit-content;
+  color: var(--primary);
 }
 .rightSide {
   width: 50%;
@@ -36,15 +37,16 @@
   max-width: 780px;
   margin-bottom: 81px;
   display: block;
+  color: var(--white);
 }
 .subtitle {
   font-size: 18px;
   line-height: 150%;
-  color: var(--greyText);
+  color: var(--white);
 }
 
 .card {
-  background-color: #181823;
+  background-color: var(--grey);
 }
 
 .cardText {

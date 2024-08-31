@@ -51,7 +51,7 @@ const WorkExperience = () => {
 
   const variants = {
     hidden: { opacity: 0, x: -50 },
-    enter: { opacity: 0.5, x: 0 },
+    enter: { opacity: 1, x: 0 },
   };
 
   return (
@@ -62,13 +62,13 @@ const WorkExperience = () => {
       <motion.h2
         transition={{ type: "linear", duration: 1 }}
         animate={isInView ? "enter" : "hidden"}
-        className="titleSection"
+        className={classnames(s.titleSection)}
         variants={variants}
         initial="hidden"
         exit="hidden"
         ref={ref}
       >
-        work experience
+        Work experience
       </motion.h2>
 
       <h3 className={s.title}>Companies I have worked for in the past.</h3>

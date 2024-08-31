@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Header from "./components/header";
 import Hero from "./components/hero";
-// import WorkExperience from "./components/workExperience";
+import WorkExperience from "./components/workExperience";
 import Skillset from "./components/skillset";
 import Projects from "./components/projects";
 import SocialLinks from "./components/socialLinks";
@@ -51,7 +51,7 @@ function App() {
       </div>
       <Header loading={loading} />
       <Hero />
-      {/* <WorkExperience loading={loading} /> */}
+      <WorkExperience loading={loading} />
       <Skillset />
       <Projects />
       <SocialLinks />

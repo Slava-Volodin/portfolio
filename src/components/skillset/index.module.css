@@ -33,6 +33,7 @@
 }
 .title {
   display: inline-block;
+  color: var(--primary);
 }
 .description {
   line-height: 150%;
@@ -89,7 +90,9 @@
   margin-bottom: 6px;
   align-items: flex-end;
 }
-
+.starIcon {
+  fill: var(--primary);
+}
 @media screen and (max-width: 1040px) {
   .container {
     flex-direction: column;

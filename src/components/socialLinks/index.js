@@ -35,7 +35,7 @@ const SocialLinks = () => {
           <div className={s.links}>
             <a
               className={s.link}
-              href="https://www.instagram.com/mj_yuliya_/"
+              href="https://www.instagram.com/slava_volodin_?igsh=bW13cTVrNXZlenR1"
               target="_blank"
               rel="noreferrer"
             >

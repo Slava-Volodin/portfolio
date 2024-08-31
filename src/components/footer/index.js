@@ -44,7 +44,7 @@ const Footer = () => {
         >
           <div className={s.links}>
             <a
-              href="https://www.instagram.com/mj_yuliya_/"
+              href="https://www.instagram.com/slava_volodin_?igsh=bW13cTVrNXZlenR1"
               className={s.link}
               rel="noreferrer"
               target="_blank"
@@ -52,7 +52,7 @@ const Footer = () => {
               Instagram
             </a>
             <a
-              href="https://www.linkedin.com/in/yuliia-gorgozka-9b0451200/"
+              href="https://www.linkedin.com/in/slava-volodin-b504aa326/"
               className={s.link}
               rel="noreferrer"
               target="_blank"
@@ -61,7 +61,7 @@ const Footer = () => {
               Linkidin
             </a>
             <a
-              href="https://github.com/yuliiagorgozka"
+              href="https://github.com/Slava-Volodin"
               className={s.link}
               rel="noreferrer"
               target="_blank"

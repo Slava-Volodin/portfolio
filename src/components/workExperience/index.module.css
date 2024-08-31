@@ -8,13 +8,14 @@
   margin: 0 auto;
 }
 .title {
+  margin-top: 22px;
   font-size: 55px;
   font-weight: 700;
   max-width: 780px;
 }
 .workList {
   display: flex;
-  margin-top: 40px;
+  margin-top: 18px;
   gap: 24px;
 }
 .workItem {
@@ -54,6 +55,12 @@
 .years {
   color: var(--greyText);
 }
+
+.titleSection {
+  font-size: 35px;
+  color: var(--primary);
+}
+
 @media screen and (max-width: 1240px) {
   .workList {
     gap: 18px;
