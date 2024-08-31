@@ -1,0 +1,90 @@
+.workExperienceContainer {
+  padding-top: 120px;
+  padding-bottom: 60px;
+  position: relative;
+  z-index: 1;
+  background-color: var(--black);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.title {
+  font-size: 55px;
+  font-weight: 700;
+  max-width: 780px;
+}
+.workList {
+  display: flex;
+  margin-top: 40px;
+  gap: 24px;
+}
+.workItem {
+  padding-right: 10px;
+  padding-left: 5px;
+  width: 33.3%;
+}
+.num {
+  font-size: 117px;
+  font-weight: 400;
+  line-height: 120%;
+  opacity: 0.5;
+}
+.nameContainer {
+  font-size: 24px;
+}
+.description {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  margin-top: 16px;
+  display: inline-block;
+  color: var(--greyText);
+}
+.vocation {
+  transition: color 0.3s;
+}
+.green {
+  color: var(--green);
+}
+.blue {
+  color: var(--blue);
+}
+.pink {
+  color: var(--pink);
+}
+.years {
+  color: var(--greyText);
+}
+@media screen and (max-width: 1240px) {
+  .workList {
+    gap: 18px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .num {
+    font-size: 90px;
+  }
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .num {
+    font-size: 117px;
+  }
+
+  .workList {
+    gap: 40px;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .workItem {
+    width: 100%;
+  }
+  .description {
+    color: var(--white);
+  }
+}
