@@ -52,7 +52,7 @@ const Header = ({ loading }) => {
         initial="hidden"
         exit="hidden"
       >
-        SLAVA V.
+        VOLODIN V.
       </motion.span>
       <motion.div
         transition={{ type: "linear", duration: 1.1, delay: 2 }}
