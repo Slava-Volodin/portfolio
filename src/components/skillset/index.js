@@ -85,9 +85,14 @@ const Skillset = () => {
         <ul className={s.otherList}>
           {other?.map((el, i) => {
             return (
-              <li key={i}>
+              <motion.li
+                key={i}
+                initial={{ opacity: 0, y: 50 }} // Початковий стан: прозорий, зміщений вниз на 50px
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
                 <span className={s.description}>{el}</span>
-              </li>
+              </motion.li>
             );
           })}
         </ul>

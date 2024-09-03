@@ -105,6 +105,7 @@ const Contact = () => {
         <motion.h2
           transition={{ type: "linear", duration: 1 }}
           animate={isInView ? "enter" : "hidden"}
+          className={s.footerH}
           variants={variantsTitle}
           initial="hidden"
           exit="hidden"
