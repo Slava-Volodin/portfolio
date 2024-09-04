@@ -9,40 +9,40 @@ const jobs = [
     nameCompany: "DEU",
     vocation: "Frontend React/Next.js Developer",
     description:
-      "My main job, 20+ completed projects. I have been working with them for almost three years, from June 2020 to May 2023. ",
+      "Participated in the development of more than 10 web applications using React and Next.js, constantly improving user experience and application performance. Collaborated with cross-functional teams to design and implement user-friendly interfaces, receiving consistent positive feedback from customers and end users.",
     className: s.green,
-    experience: 3.7,
+    experience: 1.9,
     color: "#3cc74e",
   },
 
-  {
-    nameCompany: "Erbology",
-    vocation: "Frontend React Developer",
-    description:
-      "One-time project. It was necessary to have a ready-made online store written in WordPress, rewrite it in React and add an admin panel. Our cooperation continued in 2023 from February to May.",
-    className: s.pink,
-    experience: 0.4,
-    color: "#e95d90",
-  },
+  // {
+  //   nameCompany: "Erbology",
+  //   vocation: "Frontend React Developer",
+  //   description:
+  //     "One-time project. It was necessary to have a ready-made online store written in WordPress, rewrite it in React and add an admin panel. Our cooperation continued in 2023 from February to May.",
+  //   className: s.pink,
+  //   experience: 0.4,
+  //   color: "#e95d90",
+  // },
 
   {
     nameCompany: "Bozhenko",
     vocation: "Frontend Next.js Developer",
     description:
-      "Worked with this company in 2023 from July to September. Completed 2 projects. Online auto parts store and company website.",
+      "Participated in the development of large projects: an online auto parts store and a corporate site on Next.js. Implemented SWR for efficient data acquisition and real-time updates, optimizing performance and reducing load times. Focused on optimizing site performance and providing responsive design to improve user experience.",
     className: s.blue,
     experience: 0.3,
     color: "#609bff",
   },
-  {
-    nameCompany: "Go7",
-    vocation: "Frontend Next.js Developer",
-    description:
-      "Worked with this company in 2024 four months. Above the platform for purchasing plane tickets.",
-    className: s.green,
-    experience: 0.4,
-    color: "#3cc74e",
-  },
+  // {
+  //   nameCompany: "Go7",
+  //   vocation: "Frontend Next.js Developer",
+  //   description:
+  //     "Worked with this company in 2024 four months. Above the platform for purchasing plane tickets.",
+  //   className: s.green,
+  //   experience: 0.4,
+  //   color: "#3cc74e",
+  // },
 ];
 
 const WorkExperience = () => {

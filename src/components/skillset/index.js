@@ -81,22 +81,6 @@ const Skillset = () => {
 
   return (
     <>
-      <div className={classNames(s.otherContainer, "container")}>
-        <ul className={s.otherList}>
-          {other?.map((el, i) => {
-            return (
-              <motion.li
-                key={i}
-                initial={{ opacity: 0, y: 50 }} // Початковий стан: прозорий, зміщений вниз на 50px
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-              >
-                <span className={s.description}>{el}</span>
-              </motion.li>
-            );
-          })}
-        </ul>
-      </div>
       <div id="skills" className={classNames(s.container, "container")}>
         <div className={s.titleContainer}>
           <motion.h2
@@ -134,6 +118,22 @@ const Skillset = () => {
                 </div>
                 <span className={s.descriptionItem}>{skill.description}</span>
               </li>
+            );
+          })}
+        </ul>
+      </div>
+      <div className={classNames(s.otherContainer, "container")}>
+        <ul className={s.otherList}>
+          {other?.map((el, i) => {
+            return (
+              <motion.li
+                key={i}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <span className={s.description}>{el}</span>
+              </motion.li>
             );
           })}
         </ul>

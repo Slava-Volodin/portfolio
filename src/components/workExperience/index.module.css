@@ -6,6 +6,11 @@
   background-color: var(--black);
   max-width: 1440px;
   margin: 0 auto;
+  background: linear-gradient(
+    to top,
+    rgba(60, 138, 103, 0.5),
+    rgba(5, 12, 13, 0.5) 25%
+  );
 }
 .title {
   margin-top: 22px;
@@ -21,13 +26,13 @@
 .workItem {
   padding-right: 10px;
   padding-left: 5px;
-  width: 33.3%;
+  width: 50%;
 }
 .num {
   font-size: 117px;
   font-weight: 400;
   line-height: 120%;
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 .nameContainer {
   font-size: 24px;
@@ -38,16 +43,16 @@
   font-weight: 400;
   margin-top: 16px;
   display: inline-block;
-  color: var(--greyText);
+  color: var(--white);
 }
 .vocation {
   transition: color 0.3s;
 }
 .green {
-  color: var(--green);
+  color: var(--primary);
 }
 .blue {
-  color: var(--blue);
+  color: var(--primary);
 }
 .pink {
   color: var(--pink);

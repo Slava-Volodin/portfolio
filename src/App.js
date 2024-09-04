@@ -51,8 +51,8 @@ function App() {
       </div>
       <Header loading={loading} />
       <Hero />
-      <WorkExperience loading={loading} />
       <Skillset />
+      <WorkExperience loading={loading} />
       <Projects />
       <SocialLinks />
       <Contact />
