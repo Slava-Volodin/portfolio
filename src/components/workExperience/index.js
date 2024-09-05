@@ -55,46 +55,48 @@ const WorkExperience = () => {
   };
 
   return (
-    <div
-      id="experience"
-      className={classnames(s.workExperienceContainer, "container")}
-    >
-      <motion.h2
-        transition={{ type: "linear", duration: 1 }}
-        animate={isInView ? "enter" : "hidden"}
-        className={classnames(s.titleSection)}
-        variants={variants}
-        initial="hidden"
-        exit="hidden"
-        ref={ref}
+    <div className={s.background}>
+      <div
+        id="experience"
+        className={classnames(s.workExperienceContainer, "container")}
       >
-        Work experience
-      </motion.h2>
+        <motion.h2
+          transition={{ type: "linear", duration: 1 }}
+          animate={isInView ? "enter" : "hidden"}
+          className={classnames(s.titleSection)}
+          variants={variants}
+          initial="hidden"
+          exit="hidden"
+          ref={ref}
+        >
+          Work experience
+        </motion.h2>
 
-      <h3 className={s.title}>Companies I have worked for in the past.</h3>
-      <ul className={s.workList}>
-        {jobs?.map((el) => {
-          return (
-            <li className={s.workItem} key={el.nameCompany}>
-              <div>
-                <span
-                  className={classnames(s.num, {
-                    [el.className]: el.className,
-                  })}
-                >
-                  {el.experience}
-                </span>
-                <span className={s.years}>years</span>
-              </div>
-              <div className={s.nameContainer}>
-                <span className={el.className}>{el.nameCompany}, </span>
-                <span className={s.vocation}>{el.vocation}</span>
-              </div>
-              <span className={s.description}>{el.description}</span>
-            </li>
-          );
-        })}
-      </ul>
+        <h3 className={s.title}>Companies I have worked for in the past.</h3>
+        <ul className={s.workList}>
+          {jobs?.map((el) => {
+            return (
+              <li className={s.workItem} key={el.nameCompany}>
+                <div>
+                  <span
+                    className={classnames(s.num, {
+                      [el.className]: el.className,
+                    })}
+                  >
+                    {el.experience}
+                  </span>
+                  <span className={s.years}>years</span>
+                </div>
+                <div className={s.nameContainer}>
+                  <span className={el.className}>{el.nameCompany}, </span>
+                  <span className={s.vocation}>{el.vocation}</span>
+                </div>
+                <span className={s.description}>{el.description}</span>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 };

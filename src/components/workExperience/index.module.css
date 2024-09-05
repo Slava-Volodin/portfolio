@@ -3,9 +3,11 @@
   padding-bottom: 60px;
   position: relative;
   z-index: 1;
-  background-color: var(--black);
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.background {
   background: linear-gradient(
     to top,
     rgba(60, 138, 103, 0.5),

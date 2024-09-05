@@ -54,73 +54,74 @@ const Projects = () => {
   // ];
 
   return (
-    <div id="projects" className={classnames(s.wrapperProject, "container")}>
-      <div className={s.H2}>
-        <motion.h2
-          transition={{ type: "linear", duration: 1 }}
-          animate={isInView ? "enter" : "hidden"}
-          className="titleSection"
-          variants={variants}
-          initial="hidden"
-          exit="hidden"
-          ref={ref}
-        >
-          Projects
-        </motion.h2>
+    <div className={s.background}>
+      <div id="projects" className={classnames(s.wrapperProject, "container")}>
+        <div className={s.H2}>
+          <motion.h2
+            transition={{ type: "linear", duration: 1 }}
+            animate={isInView ? "enter" : "hidden"}
+            className="titleSection"
+            variants={variants}
+            initial="hidden"
+            exit="hidden"
+            ref={ref}
+          >
+            Projects
+          </motion.h2>
 
-        <span className={s.title}>
-          I have completed more than 30+ projects, of which I have selected
-          several of the most interesting
-        </span>
-      </div>
-      <div className={s.allSide}>
-        <div className={s.leftSide}>
-          <ul className={s.project}>
-            {projectsLeft.map((el) => {
-              return (
-                <li key={el.name} className={s.card}>
-                  <a
-                    target="_blank"
-                    href={el.path}
-                    rel="noreferrer"
-                    className={s.cardLink}
-                  >
-                    <div className={s.imgContainer}>
-                      <img className={s.imgProject} src={el.img} />
-                    </div>
-                    <div className={s.cardText}>
-                      <h3 className={s.cardTitle}>{el.name}</h3>
-                      <span className={s.subtitle}>{el.text}</span>
-                    </div>
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
+          <span className={s.title}>
+            I have completed more than 30+ projects, of which I have selected
+            several of the most interesting
+          </span>
         </div>
-        <div className={s.rightSide}>
-          <ul className={s.project}>
-            {projectsRight.map((el) => {
-              return (
-                <li key={el.name} className={s.card}>
-                  <a
-                    target="_blank"
-                    href={el.path}
-                    rel="noreferrer"
-                    className={s.cardLink}
-                  >
-                    <div className={s.cardText}>
-                      <h3 className={s.cardTitle}>{el.name}</h3>
-                      <span className={s.subtitle}>{el.text}</span>
-                    </div>
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
+        <div className={s.allSide}>
+          <div className={s.leftSide}>
+            <ul className={s.project}>
+              {projectsLeft.map((el) => {
+                return (
+                  <li key={el.name} className={s.card}>
+                    <a
+                      target="_blank"
+                      href={el.path}
+                      rel="noreferrer"
+                      className={s.cardLink}
+                    >
+                      <div className={s.imgContainer}>
+                        <img className={s.imgProject} src={el.img} />
+                      </div>
+                      <div className={s.cardText}>
+                        <h3 className={s.cardTitle}>{el.name}</h3>
+                        <span className={s.subtitle}>{el.text}</span>
+                      </div>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className={s.rightSide}>
+            <ul className={s.project}>
+              {projectsRight.map((el) => {
+                return (
+                  <li key={el.name} className={s.card}>
+                    <a
+                      target="_blank"
+                      href={el.path}
+                      rel="noreferrer"
+                      className={s.cardLink}
+                    >
+                      <div className={s.cardText}>
+                        <h3 className={s.cardTitle}>{el.name}</h3>
+                        <span className={s.subtitle}>{el.text}</span>
+                      </div>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
-      </div>
-      {/* <div className={s.rightSide}>
+        {/* <div className={s.rightSide}>
         <ul className={s.project}>
           {t.map((el) => {
             return (
@@ -144,6 +145,7 @@ const Projects = () => {
           })}
         </ul>
       </div> */}
+      </div>
     </div>
   );
 };
