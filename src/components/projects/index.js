@@ -25,6 +25,7 @@ const Projects = () => {
       text: "Created a responsive website for a landscaping company based in England using React. Focused on delivering a user-friendly interface to showcase the company’s services effectively.",
       path: "http://gardens247.co.uk",
     },
+    // {
     //   name: "DaoSign",
     //   img: testIcon,
     //   text: "Marketing page",
@@ -70,7 +71,7 @@ const Projects = () => {
           </motion.h2>
 
           <span className={s.title}>
-            I have completed more than 30+ projects, of which I have selected
+            I have completed more than 10+ projects, of which I have selected
             several of the most interesting
           </span>
         </div>
